@@ -25,7 +25,7 @@ export default function HomePage() {
 
     <Finder className="
       mt-6 mb-[5.375rem] md:mt-0 md:mb-0 md:fixed md:top-[calc(2.75rem+2vh)] md:right-[8vw]
-      min-h-[20rem] md:min-h-0 md:h-[41vh] md:w-[44vw]
+      min-h-[16rem] md:min-h-0 md:h-[41vh] md:w-[44vw]
     "/>
     
     <Dock/>

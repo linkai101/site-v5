@@ -46,9 +46,9 @@ export default function Navbar() {
         </li>
       </Link>
 
-      <Link href="/portfolio">
+      <Link href="/projects">
         <li>
-          portfolio
+          projects
         </li>
       </Link>
 

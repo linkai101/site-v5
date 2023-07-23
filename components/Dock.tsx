@@ -25,7 +25,7 @@ export default function Dock() {
     const dockH = dockBg.clientHeight;
     const dockRadius = 24;
     const dockBgPath = rc.path(`M${dockRadius},0 L${dockW-dockRadius},0 Q${dockW},0 ${dockW},${dockRadius} L${dockW},${dockH-dockRadius} Q${dockW},${dockH} ${dockW-dockRadius},${dockH} L${dockRadius},${dockH} Q0,${dockH} 0,${dockH-dockRadius} L0,${dockRadius} Q0,0 ${dockRadius},0 Z`, {
-      fill: 'rgba(0, 0, 0, 0.25)',
+      fill: 'rgba(0, 0, 0, 0.5)',
       fillWeight: 2,
       fillStyle: 'zigzag',
       roughness: 0.5,
@@ -42,14 +42,17 @@ export default function Dock() {
     <svg id="dockBg" className="w-full h-full absolute top-0 left-0 -z-10"/>
 
     <ul className="h-full px-3 pt-3 pb-4 flex items-center gap-3.5 overflow-x-auto text-sm text-black">
-      <li className="h-full aspect-square">
+      <li className="h-full aspect-square relative">
         <img src="/assets/finder.svg"/>
+        <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
       </li>
-      <li className="h-full aspect-square">
+      <li className="h-full aspect-square relative">
         <img src="/assets/safari.svg"/>
+        <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
       </li>
-      <li className="h-full aspect-square">
+      <li className="h-full aspect-square relative">
         <img src="/assets/preview.svg" className="scale-110 mt-[2px]"/>
+        <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
       </li>
 
       <div className="mx-1.5 h-full border-[0.5px] border-slate-400/75 scale-y-110"/>
