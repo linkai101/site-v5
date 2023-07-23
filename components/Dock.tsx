@@ -1,8 +1,12 @@
 "use client";
+import Link from 'next/link';
 import { useEffect } from "react";
 
 // @ts-ignore
 import rough from "roughjs/bundled/rough.esm";
+import { FaCaretDown } from 'react-icons/fa';
+
+// https://www.freeconvert.com/png-to-svg
 
 export default function Dock() {
   useEffect(() => {
@@ -34,41 +38,78 @@ export default function Dock() {
     dockBg.appendChild(dockBgPath);
   }
 
-  return <div className="
-    h-20 max-w-[calc(100vw-1rem)] px-[3px]
-    fixed bottom-1.5 left-1/2 -translate-x-1/2
-    shadow-2xl rounded-2xl
-  ">
-    <svg id="dockBg" className="w-full h-full absolute top-0 left-0 -z-10"/>
+  return <div className="fixed bottom-1.5 h-20 w-full flex justify-center">
+    <div className="
+      px-1 relative max-w-[calc(100%-0.5rem)]
+      shadow-2xl rounded-2xl
+    ">
+      <svg id="dockBg" className="w-full h-full absolute top-0 left-0 -z-10"/>
 
-    <ul className="h-full px-3 pt-3 pb-4 flex items-center gap-3.5 overflow-x-auto text-sm text-black">
-      <li className="h-full aspect-square relative">
-        <img src="/assets/finder.svg"/>
-        <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
-      </li>
-      <li className="h-full aspect-square relative">
-        <img src="/assets/safari.svg"/>
-        <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
-      </li>
-      <li className="h-full aspect-square relative">
-        <img src="/assets/preview.svg" className="scale-110 mt-[2px]"/>
-        <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
-      </li>
+      <ul className="h-full px-3 pt-3 pb-4 flex items-center gap-3.5 overflow-x-auto sm:overflow-x-visible text-sm text-black">
+        <li className="h-full aspect-square relative group">
+          <img src="/assets/finder.svg"/>
+          <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
+          
+          <div className="opacity-0 group-hover:opacity-100 px-3 pt-1 pb-0.5 absolute -top-12 left-1/2 -translate-x-1/2 text-theme-onBackgroundDark bg-theme-backgroundDark/50 rounded-md transition duration-100">
+            Finder
+            <FaCaretDown className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-xl text-theme-backgroundDark/50"/>
+          </div>
+        </li>
+        <li className="h-full aspect-square relative group">
+          <img src="/assets/safari.svg"/>
+          <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
+          
+          <div className="opacity-0 group-hover:opacity-100 px-3 pt-1 pb-0.5 absolute -top-12 left-1/2 -translate-x-1/2 text-theme-onBackgroundDark bg-theme-backgroundDark/50 rounded-md transition duration-100">
+            Safari
+            <FaCaretDown className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-xl text-theme-backgroundDark/50"/>
+          </div>
+        </li>
+        <li className="h-full aspect-square relative group">
+          <img src="/assets/preview.svg" className="scale-110 mt-[2px]"/>
+          <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
+          
+          <div className="opacity-0 group-hover:opacity-100 px-3 pt-1 pb-0.5 absolute -top-12 left-1/2 -translate-x-1/2 text-theme-onBackgroundDark bg-theme-backgroundDark/50 rounded-md transition duration-100">
+            Preview
+            <FaCaretDown className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-xl text-theme-backgroundDark/50"/>
+          </div>
+        </li>
 
-      <div className="mx-1.5 h-full border-[0.5px] border-slate-400/75 scale-y-110"/>
+        <div className="mx-1.5 h-full border-[0.5px] border-slate-400/75 scale-y-110"/>
 
-      <li className="h-full aspect-square">
-        <img src="/assets/vscode.svg"/>
-      </li>
-      <li className="h-full aspect-square">
-        <img src="/assets/notes.svg"/>
-      </li>
-      {/* <li className="h-full aspect-square bg-green-400 rounded-full">Spotify</li>
-      <li className="h-full aspect-square bg-[#5865F2] rounded-xl">Discord</li> */}
+        <li className="h-full aspect-square relative group">
+          <Link href="/projects">
+            <img src="/assets/vscode.svg"/>
+          </Link>
+          
+          <div className="opacity-0 group-hover:opacity-100 w-[9.5rem] px-3 pt-1 pb-0.5 absolute -top-12 left-1/2 -translate-x-1/2 text-center text-theme-onBackgroundDark bg-theme-backgroundDark/50 rounded-md transition duration-100">
+            Visual Studio Code
+            <FaCaretDown className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-xl text-theme-backgroundDark/50"/>
+          </div>
+        </li>
+        <li className="h-full aspect-square relative group">
+          <Link href="/blog">
+            <img src="/assets/notes.svg"/>
+          </Link>
+          
+          <div className="opacity-0 group-hover:opacity-100 px-3 pt-1 pb-0.5 absolute -top-12 left-1/2 -translate-x-1/2 text-theme-onBackgroundDark bg-theme-backgroundDark/50 rounded-md transition duration-100">
+            Notes
+            <FaCaretDown className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-xl text-theme-backgroundDark/50"/>
+          </div>
+        </li>
+        {/* <li className="h-full aspect-square bg-green-400 rounded-full">Spotify</li>
+        <li className="h-full aspect-square bg-[#5865F2] rounded-xl">Discord</li> */}
 
-      <div className="mx-1.5 h-full border-[0.5px] border-slate-400/75 scale-y-110"/>
+        <div className="mx-1.5 h-full border-[0.5px] border-slate-400/75 scale-y-110"/>
 
-      <img src="/assets/trashfull.svg" className="h-full scale-[1.2]"/>
-    </ul>
+        <li className="h-full aspect-square relative group">
+          <img src="/assets/trashfull.svg" className="scale-[1.2]"/>
+          
+          <div className="opacity-0 group-hover:opacity-100 px-3 pt-1 pb-0.5 absolute -top-12 left-1/2 -translate-x-1/2 text-theme-onBackgroundDark bg-theme-backgroundDark/50 rounded-md transition duration-100">
+            Trash
+            <FaCaretDown className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-xl text-theme-backgroundDark/50"/>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>;
 }
