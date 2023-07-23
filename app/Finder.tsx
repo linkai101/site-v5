@@ -65,27 +65,6 @@ const root: (FinderItem)[] = [
     type: 'directory',
     children: [
       {
-        name: 'Socials',
-        icon: '/assets/folder.svg',
-        type: 'directory',
-        children: [
-          {
-            name: 'Email',
-            icon: '/assets/trashfull.svg',
-            type: 'link',
-            url: 'mailto:linkai@linkaiwu.com',
-            newTab: true
-          },
-          {
-            name: 'GitHub',
-            icon: '/assets/trashfull.svg',
-            type: 'link',
-            url: 'https://github.com/linkai101',
-            newTab: true
-          },
-        ]
-      },
-      {
         name: 'Projects',
         icon: '/assets/folder.svg',
         type: 'directory',
@@ -251,7 +230,7 @@ export default function Finder({ className }: { className?: string }) {
       </div>
 
       <p className="px-3 py-1 text-xs text-theme-onBackground/50 font-medium bg-theme-surface/50">
-        linkaiwu {history.slice(0, historyIndex+1).map(item => `> ${item.name}`)}
+        linkaiwu{history.slice(0, historyIndex+1).map(item => ` > ${item.name}`)}
       </p>
     </div>
   </div>

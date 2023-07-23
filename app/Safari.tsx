@@ -24,7 +24,7 @@ export default function Safari({ className }: { className?: string }) {
       </div>
     </div>
 
-    <div className="pl-6 px-6 pt-6 pb-12 flex-1 overflow-y-auto md:mr-[calc(24vw)]">
+    <div className="pl-6 pr-6 lg:pr-[11.5rem] pt-6 pb-12 flex-1 overflow-y-auto">
       <h2 className="text-2xl font-extrabold font-display">
         Hi! I&apos;m Linkai. <span className="text-theme-onBackground/30 text-base">(he/him)</span>
       </h2>
@@ -38,7 +38,7 @@ export default function Safari({ className }: { className?: string }) {
       <p className="text-sm">
         CS &amp; tech has been a passion of mine since grade school.
         My work is mostly in <a className="text-theme-primaryVariant font-medium underline decoration-2">fullstack web dev</a>, but I&apos;m currently exploring <a className="text-theme-primaryVariant font-medium underline decoration-2">3D modeling</a> and <a className="text-theme-primaryVariant font-medium underline decoration-2">3D printing</a>.
-        I'm a rising freshman at UW-Madison with an intended major of CS.
+        I&apos;m a rising freshman at UW-Madison with an intended major of CS.
       </p>
     </div>
   </div>
