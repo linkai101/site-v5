@@ -47,7 +47,9 @@ export default function Dock() {
 
       <ul className="h-full px-3 pt-3 pb-4 flex items-center gap-3.5 overflow-x-auto sm:overflow-x-visible text-sm text-black">
         <li className="h-full aspect-square relative group">
-          <img src="/assets/finder.svg"/>
+          <Link href="/">
+            <img src="/assets/finder.svg"/>
+          </Link>
           <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
           
           <div className="opacity-0 group-hover:opacity-100 px-3 pt-1 pb-0.5 absolute -top-12 left-1/2 -translate-x-1/2 text-theme-onBackgroundDark bg-theme-backgroundDark/50 rounded-md transition duration-100">
@@ -56,7 +58,9 @@ export default function Dock() {
           </div>
         </li>
         <li className="h-full aspect-square relative group">
-          <img src="/assets/safari.svg"/>
+          <Link href="/">
+            <img src="/assets/safari.svg"/>
+          </Link>
           <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
           
           <div className="opacity-0 group-hover:opacity-100 px-3 pt-1 pb-0.5 absolute -top-12 left-1/2 -translate-x-1/2 text-theme-onBackgroundDark bg-theme-backgroundDark/50 rounded-md transition duration-100">
@@ -65,7 +69,9 @@ export default function Dock() {
           </div>
         </li>
         <li className="h-full aspect-square relative group">
-          <img src="/assets/preview.svg" className="scale-110 mt-[2px]"/>
+          <Link href="/">
+            <img src="/assets/preview.svg" className="scale-110 mt-[2px]"/>
+          </Link>
           <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
           
           <div className="opacity-0 group-hover:opacity-100 px-3 pt-1 pb-0.5 absolute -top-12 left-1/2 -translate-x-1/2 text-theme-onBackgroundDark bg-theme-backgroundDark/50 rounded-md transition duration-100">

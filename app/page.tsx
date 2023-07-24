@@ -1,10 +1,5 @@
-import Link from 'next/link';
-
-import { FaAngleDown, FaRegStar } from 'react-icons/fa';
-import { FiMail, FiGithub, FiLinkedin, FiYoutube } from 'react-icons/fi';
-
-import Navbar from '../components/Navbar';
-import Dock from '../components/Dock';
+import Navbar from 'components/Navbar';
+import Dock from 'components/Dock';
 import Safari from './Safari';
 import Preview from './Preview';
 import Finder from './Finder';
