@@ -4,7 +4,7 @@ export default function Preview({ className }: { className?: string }) {
     ${className}
     flex flex-col
     bg-theme-backgroundDark text-theme-onBackgroundDark rounded-xl overflow-hidden shadow-2xl
-    `}>
+  `}>
     <div className="flex gap-4 items-center bg-theme-surfaceDark">
       <div className="p-4 flex items-center gap-1.5">
         <div className="h-3 w-3 rounded-full bg-red-400"></div>
