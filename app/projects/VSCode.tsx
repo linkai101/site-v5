@@ -1,5 +1,8 @@
+import Explorer from './Explorer';
 
-export default function VSCode({ className }: { className?: string }) {
+import { FaRegCopy, FaInfoCircle } from 'react-icons/fa';
+
+export default function VSCode({ className, children }: { className?: string, children: React.ReactNode }) {
   return <div className={`
     ${className}
     flex flex-col
@@ -13,19 +16,36 @@ export default function VSCode({ className }: { className?: string }) {
       </div>
     
       <p className="absolute left-1/2 -translate-x-1/2 text-sm font-semibold font-display">
-        Projects — linkaiwu
+        Welcome.md — Projects
       </p>
     </div>
 
-    <div className="flex-1 flex overflow-hidden">
-      <div className="h-full w-14 bg-theme-surfaceDark text-theme-surfaceDark"></div>
+    <div className="flex-1 flex items-stretch overflow-hidden">
+      <div className="w-12 flex flex-col bg-theme-surfaceDark/50 text-theme-onSurfaceDark">
+        <div className="aspect-square flex items-center justify-center border-l border-orange-500">
+          <FaRegCopy className="text-2xl"/>
+        </div>
+      </div>
 
-      <div className="h-full w-64"></div>
+      <Explorer className="w-64"/>
       
-      <div className="h-full flex-1 flex flex-col border-l-2 border-theme-surfaceDark/40">
-        <div className="h-10 bg-theme-backgroundDark"></div>
+      <div className="flex-1 flex flex-col border-l-2 border-theme-surfaceDark/40">
+        <div className="h-10 flex text-sm bg-theme-backgroundDark shadow-lg">
+          <div className="pl-2.5 pr-5 flex items-center gap-2 border-t border-orange-500 bg-theme-surfaceDark/40 cursor-pointer">
+            <FaInfoCircle className="text-base text-blue-300"/>
+            <span className="pt-1">Welcome.md</span>
+          </div>
 
-        <div className="flex-1 text-theme-surfaceDark bg-theme-surfaceDark/40"></div>
+          <div className="pl-2.5 pr-5 flex items-center gap-2 italic cursor-pointer">
+            <FaInfoCircle className="text-base text-blue-300"/>
+            <span className="pt-1">README.md</span>
+            <span className="pt-1 text-xs text-theme-onSurfaceDark/50">site-v5</span>
+          </div>
+        </div>
+
+        <div className="flex-1 text-theme-onSurfaceDark bg-theme-surfaceDark/40">
+          {children}
+        </div>
       </div>
     </div>
   </div>
