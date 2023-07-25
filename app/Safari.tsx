@@ -1,8 +1,10 @@
-import Link from 'next/link';
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import { getContent } from 'lib/markdown';
+import { useMDXComponents } from 'mdx-components';
 
-import { FiMail, FiGithub, FiLinkedin, FiYoutube } from 'react-icons/fi';
+export default async function Safari({ className }: { className?: string }) {
+  const { content } = getContent('content/homepage.mdx'); 
 
-export default function Safari({ className }: { className?: string }) {
   return <div className={`
     ${className}
     flex flex-col
@@ -28,58 +30,8 @@ export default function Safari({ className }: { className?: string }) {
     </div>
 
     <div className="pl-6 pr-6 lg:pr-[11.5rem] pt-6 pb-12 flex-1 overflow-y-auto">
-      <h2 className="text-2xl font-extrabold font-display">
-        Hi! I&apos;m Linkai. <span className="text-theme-onBackground/30 text-base">(he/him)</span>
-      </h2>
-      <p className="text-sm mt-0.5">
-        📍 md | 🏫 <a href="https://wisc.edu" className="text-theme-primaryVariant underline" target="_blank" rel="noopener noreferrer">@uwmadison</a> &apos;27 | 🎓 <a href="https://mbhs.edu" className="text-theme-primaryVariant underline" target="_blank" rel="noopener noreferrer">mbhs</a> &apos;23
-      </p>
-
-      <h3 className="font-semibold mt-6">
-        I&apos;m a maker, designer, and student.
-      </h3>
-      <p className="text-sm">
-        CS &amp; tech has been a passion of mine since grade school.
-        My work is mostly in <a className="text-theme-primaryVariant font-medium underline decoration-2">fullstack web dev</a>, but I&apos;m currently exploring <a className="text-theme-primaryVariant font-medium underline decoration-2">3D modeling</a> and <a className="text-theme-primaryVariant font-medium underline decoration-2">3D printing</a>.
-        I&apos;m a rising freshman at UW-Madison with an intended major of CS.
-      </p>
-
-      <h3 className="font-semibold mt-6">
-        Wanna chat?
-      </h3>
-      <div className="flex gap-3 overflow-x-auto overflow-y-hidden">
-        <Link href="mailto:linkai@linkaiwu.com">
-          <div className="px-2 h-12 flex items-end justify-center gap-2.5 rounded-lg bg-theme-surface/75 hover:bg-theme-surface">
-            <FiMail size="2.15rem" className="text-theme-primaryVariant stroke-[2.2px]"/>
-            <div className="py-0.5">
-              <p className="text-xs text-theme-primaryVariant font-extrabold">
-                Contact me
-              </p>
-              <p className="text-xs text-theme-onSurface/75 font-bold -mt-0.5">
-                linkai@linkaiwu.com
-              </p>
-            </div>
-          </div>
-        </Link>
-
-        <Link href="https://github.com/linkai101" target="_blank" rel="noopener noreferrer">
-          <div className="h-12 w-12 flex items-end justify-center rounded-lg bg-theme-surface/75 hover:bg-theme-surface">
-            <FiGithub size="2.25rem" className="text-theme-primaryVariant stroke-[2.2px]"/>
-          </div>
-        </Link>
-
-        <Link href="https://linkedin.com/in/linkaiwu" target="_blank" rel="noopener noreferrer">
-          <div className="h-12 w-12 flex items-end justify-center rounded-lg bg-theme-surface/75 hover:bg-theme-surface">
-            <FiLinkedin size="2rem" className="text-theme-primaryVariant stroke-[2.2px] mb-[0.1rem]"/>
-          </div>
-        </Link>
-        
-        {/* <Link href="https://youtube.com/@linkai" target="_blank" rel="noopener noreferrer">
-          <div className="h-12 w-12 flex items-end justify-center rounded-lg bg-theme-surface/75 hover:bg-theme-surface">
-            <FiYoutube size="2.15rem" className="text-theme-primaryVariant stroke-[2.2px] -mb-[0.1rem]"/>
-          </div>
-        </Link> */}
-      </div>
+      {/* @ts-ignore */}
+      <MDXRemote source={content} components={useMDXComponents()}/>
     </div>
   </div>
 }

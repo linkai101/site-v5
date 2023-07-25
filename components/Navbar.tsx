@@ -41,19 +41,19 @@ export default function Navbar() {
       </Link>
 
       <Link href="/">
-        <li>
+        <li className="-mx-2.5 px-2.5 py-1 hover:bg-black/10 rounded-lg transition duration-500 delay-100">
           home
         </li>
       </Link>
 
       <Link href="/projects">
-        <li>
+        <li className="-mx-2.5 px-2.5 py-1 hover:bg-black/10 rounded-lg transition duration-500 delay-100">
           projects
         </li>
       </Link>
 
       <Link href="/blog">
-        <li>
+        <li className="-mx-2.5 px-2.5 py-1 hover:bg-black/10 rounded-lg transition duration-500 delay-100">
           blog
         </li>
       </Link>

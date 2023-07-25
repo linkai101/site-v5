@@ -8,6 +8,7 @@ export default function HomePage() {
   return <>
     <Navbar/>
 
+    {/* @ts-ignore */}
     <Safari className="
       mt-[calc(2.75rem)] lg:mt-0 lg:fixed lg:top-[calc(2.75rem+10vh)] lg:left-[2vw]
       min-h-[16rem] lg:min-h-0 lg:h-[32rem] lg:max-h-[calc(90vh-8.125rem)] lg:w-[54rem] lg:max-w-[calc(90vw-24rem)]

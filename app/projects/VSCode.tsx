@@ -29,8 +29,8 @@ export default function VSCode({ className, children }: { className?: string, ch
 
       <Explorer className="w-64"/>
       
-      <div className="flex-1 flex flex-col border-l-2 border-theme-surfaceDark/40">
-        <div className="h-10 flex text-sm bg-theme-backgroundDark shadow-lg">
+      <div className="flex-1 max-w-[calc(100%-19rem)] flex flex-col border-l-2 border-theme-surfaceDark/40">
+        <div className="h-10 flex text-sm overflow-x-auto bg-theme-backgroundDark shadow-lg">
           <div className="pl-2.5 pr-5 flex items-center gap-2 border-t border-orange-500 bg-theme-surfaceDark/40 cursor-pointer">
             <FaInfoCircle className="text-base text-blue-300"/>
             <span className="pt-1">Welcome.md</span>
@@ -38,7 +38,7 @@ export default function VSCode({ className, children }: { className?: string, ch
 
           <div className="pl-2.5 pr-5 flex items-center gap-2 italic cursor-pointer">
             <FaInfoCircle className="text-base text-blue-300"/>
-            <span className="pt-1">README.md</span>
+            <span className="pt-1 text-theme-onSurfaceDark/75">README.md</span>
             <span className="pt-1 text-xs text-theme-onSurfaceDark/50">site-v5</span>
           </div>
         </div>

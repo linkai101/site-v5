@@ -1,7 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-
-import Navbar from '../components/Navbar';
+import { MDXProvider } from '@mdx-js/react';
 
 export const metadata: Metadata = {
   title: 'Linkai Wu',
