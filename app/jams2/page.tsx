@@ -17,71 +17,73 @@ export default function JamsPage() {
 
     <main className="px-4 container max-w-5xl flex flex-col-reverse md:flex-row gap-12">  
       <div className="md:w-80 pt-10 pb-12 relative">
-        <h2 className="text-xl font-bold">
-          Author
-        </h2>
+        <div className="sticky top-24">
+          <h2 className="text-xl font-bold">
+            Author
+          </h2>
 
-        <div className="px-6 py-4 bg-neutral-200/75 rounded-2xl mt-1">
-          <div className="flex items-center gap-4 mt-1">
-            <img src="https://github.com/linkai101.png" className="w-12 rounded-full"/>
-            <div>
-              <p className="font-semibold text-neutral-500">
-                linkai101
-              </p>
+          <div className="px-6 py-4 bg-neutral-200/75 rounded-2xl mt-1">
+            <div className="flex items-center gap-4 mt-1">
+              <img src="https://github.com/linkai101.png" className="w-12 rounded-full"/>
+              <div>
+                <p className="font-semibold text-neutral-500">
+                  linkai101
+                </p>
 
-              <div className="flex gap-3 -mt-0.5">
-                <button className="flex items-center gap-1 font-semibold text-sm text-purple-600 rounded-full hover:underline underline-2">
-                  <FiGithub/> <span className="mt-0.5">GitHub</span>
-                </button>
-                <button className="flex items-center gap-1 font-semibold text-sm text-purple-600 rounded-full hover:underline underline-2">
-                  <FiSlack/> <span className="mt-0.5">DM on Slack</span>
-                </button>
+                <div className="flex gap-3 -mt-0.5">
+                  <button className="flex items-center gap-1 font-semibold text-sm text-purple-600 rounded-full hover:underline underline-2">
+                    <FiGithub/> <span className="mt-0.5">GitHub</span>
+                  </button>
+                  <button className="flex items-center gap-1 font-semibold text-sm text-purple-600 rounded-full hover:underline underline-2">
+                    <FiSlack/> <span className="mt-0.5">DM on Slack</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <h2 className="text-xl font-bold mt-8">
-          Resources
-        </h2>
-        <div className="flex flex-col gap-3 mt-1">
-          <button className="px-4 py-1 flex justify-between items-center text-left text-purple-600 underline underline-2 rounded-xl outline outline-purple-600">
-            <span className="mt-0.5">Presentation</span>
-            <FiDownloadCloud className="text-lg"/>
-          </button>
-          <button className="px-4 py-1 flex justify-between items-center text-left text-purple-600 underline underline-2 rounded-xl outline outline-purple-600">
-            <span className="mt-0.5">Video</span>
-            <FiDownloadCloud className="text-lg"/>
-          </button>
-        </div>
-
-        <div className="hidden md:block sticky top-24">
           <h2 className="text-xl font-bold mt-8">
-            Outline
+            Resources
           </h2>
-          <ul className="pl-4 flex flex-col gap-2.5 text-sm list-disc mt-1">
-            <li>
-              Getting started with Spline
-            </li>
-            <li>
-              Important controls 🕹️
-            </li>
-            <li>
-              Creating your island 🏝️
-            </li>
-            <li>
-              Optional activity: making assets! 📦
-            </li>
-            <li>
-              Customizing your island 🎀
-            </li>
-            <li>
-              Build a collaborative sky village by linking islands 🌉
-            </li>
-            <li>
-              What's next 🔮
-            </li>
-          </ul>
+          <div className="flex flex-col gap-3 mt-1">
+            <button className="px-4 py-1 flex justify-between items-center text-left text-purple-600 underline underline-2 rounded-xl outline outline-purple-600">
+              <span className="mt-0.5">Presentation</span>
+              <FiDownloadCloud className="text-lg"/>
+            </button>
+            <button className="px-4 py-1 flex justify-between items-center text-left text-purple-600 underline underline-2 rounded-xl outline outline-purple-600">
+              <span className="mt-0.5">Video</span>
+              <FiDownloadCloud className="text-lg"/>
+            </button>
+          </div>
+
+          <div className="hidden md:block">
+            <h2 className="text-xl font-bold mt-8">
+              Outline
+            </h2>
+            <ul className="pl-4 flex flex-col gap-2.5 text-sm list-disc mt-1">
+              <li>
+                Getting started with Spline
+              </li>
+              <li>
+                Important controls 🕹️
+              </li>
+              <li>
+                Creating your island 🏝️
+              </li>
+              <li>
+                Optional activity: making assets! 📦
+              </li>
+              <li>
+                Customizing your island 🎀
+              </li>
+              <li>
+                Build a collaborative sky village by linking islands 🌉
+              </li>
+              <li>
+                What's next 🔮
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
