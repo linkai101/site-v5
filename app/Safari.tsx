@@ -3,7 +3,7 @@ import { getContent } from 'lib/markdown';
 import { useMDXComponents } from 'mdx-components';
 
 export default async function Safari({ className }: { className?: string }) {
-  const { content } = getContent('content/homepage.mdx'); 
+  const { content } = getContent('content/landing.mdx'); 
 
   return <div className={`
     ${className}

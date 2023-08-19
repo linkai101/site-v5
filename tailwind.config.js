@@ -2,10 +2,11 @@
 module.exports = {
   darkMode: false, // bool or 'media' (system setting) or 'class' (toggle manually)
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx,md,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,md,mdx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./mdx-components.{js,ts,jsx,tsx}",
+    "./content/**/*.{md,mdx}",
   ],
   theme: {
     container: {

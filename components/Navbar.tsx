@@ -2,26 +2,24 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { motion } from 'framer-motion';
 
-import Notch from './Notch';
+// import Notch from './Notch';
 
 export default function Navbar() {
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile('ontouchstart' in window);
-    };
+  // useEffect(() => {
+  //   const checkMobile = () => {
+  //     setIsMobile('ontouchstart' in window);
+  //   };
 
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
+  //   checkMobile();
+  //   window.addEventListener('resize', checkMobile);
 
-    return () => {
-      window.removeEventListener('resize', checkMobile);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('resize', checkMobile);
+  //   };
+  // }, []);
 
   return <nav className="fixed top-0 h-[2.75rem] w-full group bg-theme-primary backdrop-blur-[2px] z-40">
     <ul className={`
@@ -40,7 +38,7 @@ export default function Navbar() {
         </div>
       </Link>
 
-      <Link href="/">
+      {/* <Link href="/">
         <li className="-mx-2.5 px-2.5 py-1 hover:bg-black/10 rounded-lg transition duration-500 delay-100">
           home
         </li>
@@ -50,17 +48,17 @@ export default function Navbar() {
         <li className="-mx-2.5 px-2.5 py-1 hover:bg-black/10 rounded-lg transition duration-500 delay-100">
           projects
         </li>
-      </Link>
+      </Link> */}
 
-      <Link href="/blog">
+      {/* <Link href="/blog">
         <li className="-mx-2.5 px-2.5 py-1 hover:bg-black/10 rounded-lg transition duration-500 delay-100">
           blog
         </li>
-      </Link>
+      </Link> */}
 
     </ul>
 
-    {!isMobile &&
+    {/* {!isMobile &&
       // <img
       //   src="/assets/notch.svg/"
       //   className="h-[85%] absolute top-0 left-1/2 -translate-x-1/2 group-hover:pointer-events-none group-hover:opacity-50 transition duration-500 delay-100"
@@ -68,6 +66,6 @@ export default function Navbar() {
       <Notch
         className="h-[85%] absolute top-0 left-1/2 -translate-x-1/2 group-hover:pointer-events-none group-hover:opacity-50 transition duration-500 delay-100"
       />
-    }
+    } */}
   </nav>;
 }

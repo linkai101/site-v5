@@ -23,34 +23,34 @@ const root: (FinderItem)[] = [
     icon: '/assets/folder.svg',
     type: 'directory',
     children: [
-      {
-        name: 'Notes',
-        icon: '/assets/notes.svg',
-        type: 'link',
-        url: '/blog',
-        newTab: false
-      },
+      // {
+      //   name: 'Notes',
+      //   icon: '/assets/notes.svg',
+      //   type: 'link',
+      //   url: '/blog',
+      //   newTab: false
+      // },
       {
         name: 'Preview',
         icon: '/assets/preview.svg',
         type: 'link',
-        url: '',
+        url: '/',
         newTab: false
       },
       {
         name: 'Safari',
         icon: '/assets/safari.svg',
         type: 'link',
-        url: '',
+        url: '/',
         newTab: false
       },
-      {
-        name: 'Visual Studio Code',
-        icon: '/assets/vscode.svg',
-        type: 'link',
-        url: '/projects',
-        newTab: false
-      },
+      // {
+      //   name: 'Freeform',
+      //   icon: '/assets/freeform.svg',
+      //   type: 'link',
+      //   url: '/projects',
+      //   newTab: false
+      // },
     ]
   },
   {
@@ -64,12 +64,12 @@ const root: (FinderItem)[] = [
     icon: '/assets/folder.svg',
     type: 'directory',
     children: [
-      {
-        name: 'Projects',
-        icon: '/assets/folder.svg',
-        type: 'directory',
-        children: []
-      },
+      // {
+      //   name: 'Projects',
+      //   icon: '/assets/folder.svg',
+      //   type: 'directory',
+      //   children: []
+      // },
       // {
       //   name: 'CV',
       //   icon: '',
