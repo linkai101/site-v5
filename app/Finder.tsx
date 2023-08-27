@@ -64,12 +64,37 @@ const root: (FinderItem)[] = [
     icon: '/assets/folder.svg',
     type: 'directory',
     children: [
-      // {
-      //   name: 'Projects',
-      //   icon: '/assets/folder.svg',
-      //   type: 'directory',
-      //   children: []
-      // },
+      {
+        name: 'projects i worked on',
+        icon: '/assets/folder.svg',
+        type: 'directory',
+        children: [
+          {
+            name: 'Hack Club Jams',
+            icon: 'https://jams.hackclub.com/favicon.ico',
+            type: 'link',
+            url: 'https://github.com/hackclub/Jams',
+          },
+          {
+            name: 'STEM to the Sky website',
+            icon: 'https://stemtothesky.org/assets/stts-logo.png',
+            type: 'link',
+            url: 'https://stemtothesky.org',
+          },
+          {
+            name: 'Oracle of Blair 2022',
+            icon: 'https://2022.polistat.mbhs.edu/favicon.png',
+            type: 'link',
+            url: 'https://github.com/polistat/site-2022',
+          },
+          {
+            name: '& more!',
+            icon: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+            type: 'link',
+            url: 'https://github.com/linkai101',
+          },
+        ]
+      },
       // {
       //   name: 'CV',
       //   icon: '',
