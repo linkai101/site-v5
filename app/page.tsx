@@ -20,10 +20,10 @@ export default function HomePage() {
     "/>
 
     <Finder className="
-      mt-6 mb-[5.375rem] lg:mt-0 lg:mb-0 lg:fixed lg:top-[calc(2.75rem+2vh)] lg:right-[8vw]
+      mt-6 mb-6 lg:mt-0 lg:mb-0 lg:fixed lg:top-[calc(2.75rem+2vh)] lg:right-[8vw]
       min-h-[16rem] lg:min-h-0 lg:h-[20rem] lg:max-h-[calc(98vh-8.125rem)] lg:w-[34rem]
     "/>
     
-    <Dock/>
+    <Dock className="lg:fixed lg:bottom-1.5"/>
   </>;
 }

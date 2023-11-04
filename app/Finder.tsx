@@ -19,41 +19,6 @@ interface FinderItem {
 
 const root: (FinderItem)[] = [
   {
-    name: 'Applications',
-    icon: '/assets/folder.svg',
-    type: 'directory',
-    children: [
-      // {
-      //   name: 'Notes',
-      //   icon: '/assets/notes.svg',
-      //   type: 'link',
-      //   url: '/blog',
-      //   newTab: false
-      // },
-      {
-        name: 'Preview',
-        icon: '/assets/preview.svg',
-        type: 'link',
-        url: '/',
-        newTab: false
-      },
-      {
-        name: 'Safari',
-        icon: '/assets/safari.svg',
-        type: 'link',
-        url: '/',
-        newTab: false
-      },
-      // {
-      //   name: 'Freeform',
-      //   icon: '/assets/freeform.svg',
-      //   type: 'link',
-      //   url: '/projects',
-      //   newTab: false
-      // },
-    ]
-  },
-  {
     name: 'Desktop',
     icon: '/assets/folder.svg',
     type: 'directory',
@@ -65,69 +30,14 @@ const root: (FinderItem)[] = [
     type: 'directory',
     children: [
       {
-        name: 'projects i worked on',
-        icon: '/assets/folder.svg',
-        type: 'directory',
-        children: [
-          {
-            name: 'Hack Club Jams',
-            icon: 'https://jams.hackclub.com/favicon.ico',
-            type: 'link',
-            url: 'https://github.com/hackclub/Jams',
-          },
-          {
-            name: 'STEM to the Sky website',
-            icon: 'https://stemtothesky.org/assets/stts-logo.png',
-            type: 'link',
-            url: 'https://stemtothesky.org',
-          },
-          {
-            name: 'Oracle of Blair 2022',
-            icon: 'https://2022.polistat.mbhs.edu/favicon.png',
-            type: 'link',
-            url: 'https://github.com/polistat/site-2022',
-          },
-          {
-            name: '& more!',
-            icon: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
-            type: 'link',
-            url: 'https://github.com/linkai101',
-          },
-        ]
+        name: 'Linkai Wu.pdf',
+        icon: '/assets/file.png',
+        type: 'link',
+        url: '/Linkai%20Wu.pdf',
+        newTab: true
       },
-      // {
-      //   name: 'CV',
-      //   icon: '',
-      //   type: 'link',
-      //   url: '',
-      //   newTab: true
-      // },
     ]
   },
-  // {
-  //   name: 'Downloads',
-  //   icon: '/assets/folder.svg',
-  //   type: 'directory',
-  //   children: []
-  // },
-  // {
-  //   name: 'Movies',
-  //   icon: '/assets/folder.svg',
-  //   type: 'directory',
-  //   children: []
-  // },
-  // // {
-  //   name: 'Music',
-  //   icon: '/assets/folder.svg',
-  //   type: 'directory',
-  //   children: []
-  // },
-  // {
-  //   name: 'Pictures',
-  //   icon: '/assets/folder.svg',
-  //   type: 'directory',
-  //   children: []
-  // },
 ];
 
 
@@ -204,7 +114,7 @@ export default function Finder({ className }: { className?: string }) {
                   src={item.icon}
                   className="p-2 w-full max-h-16 object-contain group-hover:bg-black/5 rounded-md"
                 />
-                <p className="text-xs text-center mt-2">
+                <p className="text-xs text-center mt-2 -mx-2">
                   <span className="px-1 pt-0.5 group-hover:text-theme-onPrimary group-hover:font-medium group-hover:bg-blue-500 rounded-sm">
                     {item.name}
                   </span>
@@ -224,7 +134,7 @@ export default function Finder({ className }: { className?: string }) {
                     src={item.icon}
                     className="p-2 w-full max-h-16 object-contain group-hover:bg-black/5 rounded-md"
                   />
-                  <p className="text-xs text-center mt-2">
+                  <p className="text-xs text-center mt-2 -mx-2">
                     <span className="px-1 pt-0.5 group-hover:text-theme-onPrimary group-hover:font-medium group-hover:bg-blue-500 rounded-sm">
                       {item.name}
                     </span>
@@ -241,7 +151,7 @@ export default function Finder({ className }: { className?: string }) {
                     src={item.icon}
                     className="p-2 w-full max-h-16 object-contain group-hover:bg-black/5 rounded-md"
                   />
-                  <p className="text-xs text-center mt-2">
+                  <p className="text-xs text-center mt-2 -mx-2">
                     <span className="px-1 pt-0.5 group-hover:text-theme-onPrimary group-hover:font-medium group-hover:bg-blue-500 rounded-sm">
                       {item.name}
                     </span>

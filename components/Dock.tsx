@@ -8,7 +8,7 @@ import { FaCaretDown } from 'react-icons/fa';
 
 // https://www.freeconvert.com/png-to-svg
 
-export default function Dock() {
+export default function Dock({ className }: { className?: string }) {
   // useEffect(() => {
   //   function handleResize() {
   //     renderDockBg();
@@ -38,7 +38,7 @@ export default function Dock() {
   //   dockBg.appendChild(dockBgPath);
   // }
 
-  return <div className="fixed bottom-1.5 h-20 w-full flex justify-center">
+  return <div className={`${className} h-20 w-full flex justify-center`}>
     <div className="
       px-1 relative max-w-[calc(100%-0.5rem)]
       shadow-2xl rounded-2xl
