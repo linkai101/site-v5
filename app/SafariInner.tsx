@@ -44,7 +44,7 @@ export default function SafariInner({ children, className, ...rest }: { children
       px-2.5 bg-theme-primary/75 rounded-full text-theme-onPrimary font-bold
       absolute bottom-3 left-12 -translate-x-[50%]
       ${showScrollHint ? "" : "opacity-0 pointer-events-none"}
-      transition-opacity duration-300
+      transition-opacity duration-300 pointer-events-none
     `}>
       <span className="text-sm font-medium">↓ scroll</span>
     </div>
