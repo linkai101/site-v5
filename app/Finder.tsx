@@ -29,13 +29,21 @@ const root: (FinderItem)[] = [
     icon: '/assets/folder.svg',
     type: 'directory',
     children: [
+      // {
+      //   name: 'Linkai Wu.pdf',
+      //   icon: '/assets/file.png',
+      //   type: 'link',
+      //   url: '/Linkai%20Wu.pdf',
+      //   newTab: true
+      // },
       {
-        name: 'Linkai Wu.pdf',
-        icon: '/assets/file.png',
-        type: 'link',
-        url: '/Linkai%20Wu.pdf',
-        newTab: true
-      },
+        name: 'Projects',
+        icon: '/assets/folder.svg',
+        type: 'directory',
+        children: [
+          
+        ]
+      }
     ]
   },
 ];

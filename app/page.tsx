@@ -2,28 +2,25 @@ import Navbar from 'components/Navbar';
 import Dock from 'components/Dock';
 import Safari from './Safari';
 import Preview from './Preview';
-import Finder from './Finder';
+// import Finder from './Finder';
 
 export default function HomePage() {
   return <>
-    <Navbar/>
+    <div className="min-h-screen relative bg-theme-primaryVariant text-theme-onPrimary">
+      <Navbar/> {/* 2.75rem from top */}
 
-    {/* @ts-ignore */}
-    <Safari className="
-      mt-[calc(2.75rem)] lg:mt-0 lg:fixed lg:top-[calc(2.75rem+10vh)] lg:left-[2vw]
-      min-h-[16rem] lg:min-h-0 lg:h-[32rem] lg:max-h-[calc(90vh-8.125rem)] lg:w-[54rem] lg:max-w-[calc(90vw-24rem)]
-    "/>
+      {/* @ts-ignore */}
+      <Safari className="
+        mt-[calc(2.75rem+1rem)] lg:mt-0 mx-2 lg:mx-0 lg:absolute lg:top-[max(calc(50vh-1.3125rem-16rem-2rem),2.75rem)] lg:left-[calc(50vw-27rem-5rem)]
+        min-h-[16rem] lg:min-h-0 lg:h-[32rem] lg:max-h-[calc(100vh-2.75rem-5.375rem)] lg:w-[48rem]
+      "/>
 
-    <Preview className="
-      mt-6 lg:mt-0 lg:fixed lg:bottom-[calc(5.375rem+2vh)] lg:right-[2vw]
-      h-96 lg:h-[20rem] lg:max-h-[calc(98vh-8.125rem)] lg:w-[30rem]
-    "/>
-
-    <Finder className="
-      mt-6 mb-6 lg:mt-0 lg:mb-0 lg:fixed lg:top-[calc(2.75rem+2vh)] lg:right-[8vw]
-      min-h-[16rem] lg:min-h-0 lg:h-[20rem] lg:max-h-[calc(98vh-8.125rem)] lg:w-[34rem]
-    "/>
-    
-    <Dock className="lg:fixed lg:bottom-1.5"/>
+      <Preview className="
+        mt-4 lg:mt-0 mx-2 lg:mx-0 lg:absolute lg:top-[max(calc(50vh-1.3125rem-14rem+4rem),2.75rem)] lg:left-[calc(50vw-12rem+20rem)]
+        h-96 lg:h-[28rem] lg:max-h-[calc(100vh-2.75rem-5.375rem)] lg:w-[24rem]
+      "/>
+      
+      <Dock className="mt-2 lg:mt-0 lg:absolute lg:bottom-1.5"/> {/* 5.375rem from bottom */}
+    </div>
   </>;
 }
