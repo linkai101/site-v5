@@ -1,12 +1,16 @@
+import dynamic from 'next/dynamic';
 import Navbar from 'components/Navbar';
 import Dock from 'components/Dock';
 import Safari from './Safari';
 import Preview from './Preview';
 import Freeform from './Freeform';
 import Photoshop from './Photoshop';
-import Maya from './Maya';
+// import Maya from './Maya';
 import DesignHeading from './DesignHeading';
 import Messages from './Messages';
+
+const Maya = dynamic(() => import('./Maya'), { ssr: false });
+
 
 export default function HomePage() {
   return <>

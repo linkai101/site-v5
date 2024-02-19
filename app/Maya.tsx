@@ -1,7 +1,6 @@
 "use client";
 import { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { useLoader } from '@react-three/fiber';
+import { Canvas, useLoader } from '@react-three/fiber';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
 import { OrbitControls } from "@react-three/drei";
 // import { EffectComposer, Outline } from "@react-three/postprocessing";
