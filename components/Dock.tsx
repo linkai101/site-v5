@@ -74,6 +74,15 @@ export default function Dock({ className }: { className?: string }) {
             <FaCaretDown className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-xl text-theme-backgroundDark/50"/>
           </div>
         </li>
+        <li className="h-full aspect-square relative flex items-center group">
+          <img src="/assets/freeform.svg" className="scale-110 mt-[2px]"/>
+          <div className="h-1 aspect-square absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-theme-surface rounded-full"/>
+          
+          <div className="opacity-0 group-hover:opacity-100 px-3 pt-1 pb-0.5 absolute -top-12 left-1/2 -translate-x-1/2 text-theme-onBackgroundDark bg-theme-backgroundDark/50 rounded-md transition duration-100">
+            Freeform
+            <FaCaretDown className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-xl text-theme-backgroundDark/50"/>
+          </div>
+        </li>
 
         <div className="mx-1.5 h-full border-[0.5px] border-slate-400/75 scale-y-110"/>
 

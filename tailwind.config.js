@@ -16,6 +16,11 @@ module.exports = {
       fontFamily: {
         sans: ["Epilogue", "sans-serif"],
         display: ["Anybody", "sans-serif"],
+        display2: ["Work Sans", "sans-serif"],
+        handwriting: ["Nanum Pen Script", "sans-serif"],
+        doodle: ["Rubik Doodle Shadow", "Nanum Pen Script", "sans-serif"],
+        mono: ["JetBrains Mono", "monospace"],
+        // redacted: ["Redacted Script", "Anybody", "sans-serif"],
       },
       colors: {
         theme: {

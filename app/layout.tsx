@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Linkai Wu',
-  description: 'I\'m a maker, programmer, and student. Welcome to my corner of the internet!',
+  description: 'I\'m a student studying computer science, fascinated with the intersection of tech, art, and people.',
 };
 
 export default function RootLayout({
