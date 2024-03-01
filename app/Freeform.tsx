@@ -21,7 +21,7 @@ export default function Freeform({ className, ...rest }: { className?: string, [
         </div>
       </div>
 
-      <div className="h-full pt-12 pb-20 flex flex-col">
+      <div className="h-full pt-12 pb-20 flex flex-col font-handwriting">
         <h2 className="
           md:absolute md:top-[7rem] w-full
           gap-5 md:gap-7
@@ -31,13 +31,13 @@ export default function Freeform({ className, ...rest }: { className?: string, [
         </h2>
 
         <div className="md:absolute top-[20rem] left-[37rem] mt-24 md:mt-0">
-          <h3 className="px-4 text-4xl text-right md:text-left font-handwriting font-bold leading-7">
+          <h3 className="px-4 text-4xl text-right md:text-left font-bold leading-7">
             STEM to the Sky's website
           </h3>
-          <p className="px-4 text-xl text-right md:text-left font-handwriting leading-5 mt-1">
+          <p className="px-4 text-2xl text-right md:text-left leading-5 mt-1">
             Interviews with professionals showcasing careers in STEM.
           </p>
-          <p className="px-4 text-xl text-right md:text-left font-handwriting leading-5 mt-3">
+          <p className="px-4 text-2xl text-right md:text-left leading-5 mt-3">
             (Next.js, TailwindCSS, Sanity CMS)
           </p>
         </div>
@@ -45,13 +45,13 @@ export default function Freeform({ className, ...rest }: { className?: string, [
         <StemToTheSky className="block md:hidden aspect-[4/3] scale-100 -translate-x-24 my-6"/>
 
         <div className="md:absolute bottom-[10rem] right-[37rem] mt-12 md:mt-0">
-          <h3 className="px-4 text-4xl text-left md:text-right font-handwriting font-bold leading-7">
+          <h3 className="px-4 text-4xl text-left md:text-right font-bold leading-7">
             Oracle of Blair &apos;22
           </h3>
-          <p className="px-4 text-xl text-left md:text-right font-handwriting leading-5 mt-1">
+          <p className="px-4 text-2xl text-left md:text-right leading-5 mt-1">
             Forecast of 2022 US elections, my HS senior class project!
           </p>
-          <p className="px-4 text-xl text-left md:text-right font-handwriting leading-5 mt-3">
+          <p className="px-4 text-2xl text-left md:text-right leading-5 mt-3">
             (Next.js, SVGs, Minitab, &amp; more)
           </p>
         </div>
@@ -94,6 +94,7 @@ function StemToTheSky({ className, ...rest }: { className?: string, [key: string
           className="w-[150%] h-[150%] border-none scale-[0.667] -translate-x-[16.667%] -translate-y-[16.667%] pointer-events-none"
           title="STEM to the Sky"
           tabIndex={-1}
+          scrolling="no"
         />
       </div>
     </div>
@@ -121,6 +122,7 @@ function OracleOfBlair({ className, ...rest }: { className?: string, [key: strin
             className="w-[200%] h-[200%] border-none scale-[0.5] -translate-x-[25%] -translate-y-[25%] pointer-events-none"
             title="Oracle of Blair 2022"
             tabIndex={-1}
+            scrolling="no"
           />
         </div>
       </div>

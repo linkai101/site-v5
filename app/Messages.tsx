@@ -41,7 +41,7 @@ export default function Messages({ className, ...rest }: { className?: string, [
 
       <div className="flex-1 flex flex-col px-4 overflow-y-auto">
         <h2 className="flex mt-8 md:mt-12">
-          <MessageBubble className="px-6 py-4 text-4xl">
+          <MessageBubble className="px-6 py-4 text-4xl font-semibold">
             I <span className="text-amber-500 font-semibold">create</span> cool stuff.
           </MessageBubble>
         </h2>

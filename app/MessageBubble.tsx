@@ -36,7 +36,7 @@ export default function MessageBubble({ children, className, ...rest }: { childr
       roughness: 0.5,
       stroke: 'rgba(231, 232, 236)',
     });
-    const bubbleStemPath = rc.path(`M0,${bubbleBgH} Q${stemOffset},${bubbleBgH} ${stemOffset},${bubbleBgH-stemOffset*2} L${stemOffset*2},${bubbleBgH-stemOffset*2} Q${stemOffset*2},${bubbleBgH} 0,${bubbleBgH}`, {
+    const bubbleStemPath = rc.path(`M0,${bubbleBgH} Q${stemOffset},${bubbleBgH} ${stemOffset},${bubbleBgH/2} L${stemOffset*2},${bubbleBgH-stemOffset*2} Q${stemOffset*2},${bubbleBgH} 0,${bubbleBgH}`, {
       fill: 'rgba(231, 232, 236)',
       fillWeight: 4,
       fillStyle: "solid",
