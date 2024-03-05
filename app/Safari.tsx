@@ -42,15 +42,6 @@ export default function Safari({ className, ...rest }: { className?: string, [ke
       <p className="text-sm mt-4">
         Keep scrolling to check out the <span className="underline">cool stuff</span> I&apos;ve been up to lately 🙃
       </p>
-
-      <p className="text-sm mt-4">
-        Looking for this?
-        <Link href="https://drive.google.com/file/d/1ZLgnz1jhw_6ELjbe_lm1LitlX4l-gZET/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-          <button className="px-2 py-1 text-xs font-display text-theme-onPrimary bg-theme-primary hover:bg-theme-primary/90 transition-colors rounded-full ml-2">
-            📄 Resume - Linkai Wu.pdf
-          </button>
-        </Link>
-      </p>
     </div>
   </div>;
 }
