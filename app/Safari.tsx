@@ -35,7 +35,7 @@ export default function Safari({ className, ...rest }: { className?: string, [ke
       </p>
 
       <p className="text-sm mt-4">
-        SWE is cool, but I&apos;m also interested in UX, 3D modeling, and interactive storytelling.
+        Coding is cool, but I&apos;m also interested in UX, 3D modeling, and interactive storytelling.
         Generally, <span className="font-semibold">the intersection of tech, art, and people is where I like to be.</span>
       </p>
 
